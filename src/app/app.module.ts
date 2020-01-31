@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 <<<<<<< HEAD
 import { HOMEComponent } from './home/home.component';
+import { MilitaryComponent } from './military/military.component';
 =======
 <<<<<<< HEAD
 import { TrainerComponent } from './trainer/trainer.component';
@@ -21,7 +22,8 @@ import { HealthComponent } from './health/health.component';
 <<<<<<< HEAD
 <<<<<<< HEAD
     TraineeComponent,
-    HealthComponent
+    HealthComponent,
+    MilitaryComponent
 =======
     HOMEComponent
 >>>>>>> 58bc91d7b90f2b62f6d5d089e592b93bc374bdc1
