@@ -15,6 +15,8 @@ import { EducationComponent } from './education/education.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { ServiceComponent } from './service/service.component';
+import { FormsModule }   from '@angular/forms';
+
 //import { SignupComponent } from './signup/signup.component'
 
 
@@ -36,7 +38,8 @@ import { ServiceComponent } from './service/service.component';
  ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   
   ],
   providers: [],
