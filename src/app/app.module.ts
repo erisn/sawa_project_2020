@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AppRoutingModule } from './app-routing.module'; 
 import { AppComponent } from './app.component';
 
 import { HOMEComponent } from './home/home.component';
@@ -10,6 +9,13 @@ import { TrainerComponent } from './trainer/trainer.component';
 
 import { TraineeComponent } from './trainee/trainee.component';
 import { HealthComponent } from './health/health.component';
+import { AppRoutingModule} from './app-routing.module';
+import { AdminComponent } from './admin/admin.component';
+import { EducationComponent } from './education/education.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { ServiceComponent } from './service/service.component';
+//import { SignupComponent } from './signup/signup.component'
 
 
 @NgModule({
@@ -20,11 +26,18 @@ import { HealthComponent } from './health/health.component';
     MilitaryComponent,
     HOMEComponent,
     TrainerComponent,
-    TraineeComponent
+    TraineeComponent,
+    AdminComponent,
+    EducationComponent,
+    AboutComponent,
+    ContactComponent,
+    ServiceComponent,
+   // SignupComponent
  ],
   imports: [
-    BrowserModule
-    AppRoutingModule 
+    BrowserModule,
+    AppRoutingModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
