@@ -17,7 +17,6 @@ import { ContactComponent } from './contact/contact.component';
 import { ServiceComponent } from './service/service.component';
 import { FormsModule }   from '@angular/forms';
 
-//import { SignupComponent } from './signup/signup.component'
 
 
 @NgModule({
