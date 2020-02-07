@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./trainer.component.css']
 })
 export class TrainerComponent implements OnInit {
+  title = 'coffee';
+  firstName: string;
+  lastName: string;
+  email: string;
+  phoneNumber: string;
 
-  constructor() { }
 
-  ngOnInit() {
-  }
+
+  ngOnInit(){}
 
 }
