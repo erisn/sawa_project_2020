@@ -8,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class TrainerComponent implements OnInit {
   title = 'coffee';
   firstName: string;
+  middleName: string;
   lastName: string;
-  email: string;
-  phoneNumber: string;
+  dateofbirth: string;
+  placeofbirth: string;
+  mobokel: string;
+
+  
+
+
 
 
 

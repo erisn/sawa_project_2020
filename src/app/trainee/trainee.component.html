@@ -1,22 +1,157 @@
 <div class="container">
     <h1 id="header">{{registrationTitle}}</h1>
     <form  #f="ngForm" (ngSubmit)="coffeefunction()">
-        <div class="form-group">
-          <label for="formGroupExampleInput">First Name</label>
-          <input type="text" class="form-control" id="formGroupExampleInput" [(ngModel)]="firstName" [ngModelOptions]="{standalone: true}" placeholder="Example input">
+      
+       <div class="container">
+        <p style="font-size: 25px;">Full Information</p>
+      <div class="form-row" style="margin-top:-25px;"> 
+      <div class="form-group col-md-3">
+          <label for="formGroupExampleInput"></label>
+          <input type="text" class="form-control" id="formGroupExampleInput" [(ngModel)]="firstName" [ngModelOptions]="{standalone: true}" placeholder="First Name">
         </div>
-        <div class="form-group">
-          <label for="formGroupExampleInput2">Last Name</label>
-          <input type="text" class="form-control" id="formGroupExampleInput2" [(ngModel)]="lastName" [ngModelOptions]="{standalone: true}" placeholder="Another input">
+        <div class="form-group col-md-3">
+          <label for="formGroupExampleInput2"></label>
+          <input type="text" class="form-control" id="formGroupExampleInput2" [(ngModel)]="middleName" [ngModelOptions]="{standalone: true}" placeholder="Middle Name">
         </div>
-        <div class="form-group">
-          <label for="formGroupExampleInput">Phone Number</label>
-          <input type="text" class="form-control" id="formGroupExampleInput" [(ngModel)]="phoneNumber" [ngModelOptions]="{standalone: true}" placeholder="Example input">
+        <div class="form-group col-md-3">
+          <label for="formGroupExampleInput2"></label>
+          <input type="text" class="form-control" id="formGroupExampleInput2" [(ngModel)]="lastName" [ngModelOptions]="{standalone: true}" placeholder="Last Name">
         </div>
-        <div class="form-group">
-          <label for="formGroupExampleInput2">User Name</label>
-          <input type="text" class="form-control" id="formGroupExampleInput2" [(ngModel)]="userName" [ngModelOptions]="{standalone: true}" placeholder="Another input">
+      </div>
+    </div>
+    <div class="form-row" style="margin-left: 17px;">
+        <div class="form-group col-md-3" style="font-weight:bold; font-style: italic;">
+          <label for="formGroupExampleInput">Date of Birth</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" [(ngModel)]="Dateofbirth" [ngModelOptions]="{standalone: true}" placeholder="mm/dd/yyyy">
         </div>
+        <div class="form-group col-md-3" style="font-weight:bold; font-style: italic;">
+          <label for="formGroupExampleInput">Place of Birth</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" [(ngModel)]="placeofbirth" [ngModelOptions]="{standalone: true}" placeholder="city">
+        </div>
+        <div class="form-group col-md-3" style="font-weight:bold; font-style: italic;">
+          <label for="formGroupExampleInput">Mobokel Adi</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" [(ngModel)]="mobokeladi" [ngModelOptions]="{standalone: true}" placeholder="Twldi Adi">
+        </div>
+      </div>
+      <div class="form-row" style="margin-left: 17px;">
+        <div class="form-group col-md-3" style="font-weight:bold; font-style: italic;">
+          <label for="formGroupExampleInput">Marital Status</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" [(ngModel)]="maritalstatus" [ngModelOptions]="{standalone: true}" placeholder="Married/Single/Divorced">
+      </div>
+      <div class="form-group col-md-3" style="font-weight:bold; font-style: italic;">
+        <label for="formGroupExampleInput2">Education</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" [(ngModel)]="education" [ngModelOptions]="{standalone: true}" placeholder="Education level">
+      </div>
+      <div class="form-group col-md-3" style="font-weight:bold; font-style: italic;">
+        <label for="formGroupExampleInput2">Profession</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" [(ngModel)]="proffesion" [ngModelOptions]="{standalone: true}" placeholder="profession/skills">
+      </div>
+    </div>
+      <p style="font-size: 25px;">Background</p>
+      <div class="container">
+      <div class="form-row" style="margin-top:-10px;"> 
+      <div class="form-group col-md-3">
+          <label for="formGroupExampleInput" style="font-weight:bold; font-style: italic;">Father</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" [(ngModel)]="fathername" [ngModelOptions]="{standalone: true}" placeholder="First Name">
+        </div>
+        <div class="form-group col-md-3" >
+          <label for="formGroupExampleInput2" style="margin-top:19px"></label>
+          <input type="text" class="form-control" id="formGroupExampleInput2" [(ngModel)]="middleName" [ngModelOptions]="{standalone: true}" placeholder="Middle Name">
+        </div>
+        <div class="form-group col-md-3">
+          <label for="formGroupExampleInput2" style="margin-top:19px"></label>
+          <input type="text" class="form-control" id="formGroupExampleInput2" [(ngModel)]="lastName" [ngModelOptions]="{standalone: true}" placeholder="Last Name">
+        </div>
+      </div>
+    </div>
+    <div class="form-row" style="margin-left: 17px;">
+        <div class="form-group col-md-3">
+          <label for="formGroupExampleInput">Date of Birth</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" [(ngModel)]="Dateofbirth" [ngModelOptions]="{standalone: true}" placeholder="mm/dd/yyyy">
+        </div>
+        <div class="form-group col-md-3">
+          <label for="formGroupExampleInput">Place of Birth</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" [(ngModel)]="Placeofbirth" [ngModelOptions]="{standalone: true}" placeholder="city">
+        </div>
+      </div>
+      <div class="container">
+      <div class="form-row" style="margin-top:-9px;"> 
+      <div class="form-group col-md-3">
+          <label for="formGroupExampleInput">Mother</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" [(ngModel)]="motherName" [ngModelOptions]="{standalone: true}" placeholder="First Name">
+        </div>
+        <div class="form-group col-md-3">
+          <label for="formGroupExampleInput2" style="margin-top:19px;"></label>
+          <input type="text" class="form-control" id="formGroupExampleInput2" [(ngModel)]="middleName" [ngModelOptions]="{standalone: true}" placeholder="Middle Name">
+        </div>
+        <div class="form-group col-md-3">
+          <label for="formGroupExampleInput2" style="margin-top:19px"></label>
+          <input type="text" class="form-control" id="formGroupExampleInput2" [(ngModel)]="lastName" [ngModelOptions]="{standalone: true}" placeholder="Last Name">
+        </div>
+      </div>
+    </div>
+    <div class="form-row" style="margin-left: 17px;">
+        <div class="form-group col-md-3">
+          <label for="formGroupExampleInput">Date of Birth</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" [(ngModel)]="Dateofbirth" [ngModelOptions]="{standalone: true}" placeholder="mm/dd/yyyy">
+        </div>
+        <div class="form-group col-md-3">
+          <label for="formGroupExampleInput">Place of Birth</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" [(ngModel)]="placeofbirth" [ngModelOptions]="{standalone: true}" placeholder="city">
+        </div>
+      </div>
+      <div class="container">
+        <p style="font-size: 23px;"> Address</p>
+      <div class="form-row" style="margin-top:-25px;"> 
+      <div class="form-group col-md-3">
+          <label for="formGroupExampleInput"></label>
+          <input type="text" class="form-control" id="formGroupExampleInput" [(ngModel)]="Zoba" [ngModelOptions]="{standalone: true}" placeholder="Zoba">
+        </div>
+        <div class="form-group col-md-3">
+          <label for="formGroupExampleInput2"></label>
+          <input type="text" class="form-control" id="formGroupExampleInput2" [(ngModel)]="SubZoba" [ngModelOptions]="{standalone: true}" placeholder="Sub zoba">
+        </div>
+        <div class="form-group col-md-3">
+          <label for="formGroupExampleInput2"></label>
+          <input type="text" class="form-control" id="formGroupExampleInput2" [(ngModel)]="mimhdar" [ngModelOptions]="{standalone: true}" placeholder="Mimhdar">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <p style="font-size: 23px;"> Ahadu</p>
+    <div class="form-row" style="margin-top:-25px;"> 
+    <div class="form-group col-md-3">
+        <label for="formGroupExampleInput"></label>
+        <input type="text" class="form-control" id="formGroupExampleInput" [(ngModel)]="Refistration" [ngModelOptions]="{standalone: true}" placeholder="Registration date">
+      </div>
+      <div class="form-group col-md-3">
+        <label for="formGroupExampleInput2"></label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" [(ngModel)]="Round" [ngModelOptions]="{standalone: true}" placeholder="Round/Zur">
+      </div>
+      <div class="form-group col-md-3">
+        <label for="formGroupExampleInput2"></label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" [(ngModel)]="Ahadu" [ngModelOptions]="{standalone: true}" placeholder="Ahadu(6digits)">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <p style="font-size: 23px;"> Description</p>
+  <div class="form-row" style="margin-top:-13px"> 
+  <div class="form-group col-md-3">
+      <label for="formGroupExampleInput">Height</label>
+      <input type="text" class="form-control" id="formGroupExampleInput" [(ngModel)]="height" [ngModelOptions]="{standalone: true}" placeholder="feet/Meter">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="formGroupExampleInput2">Weight</label>
+      <input type="text" class="form-control" id="formGroupExampleInput2" [(ngModel)]="weight" [ngModelOptions]="{standalone: true}" placeholder="pound/kg">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="formGroupExampleInput2">Fluy Milkt</label>
+      <input type="text" class="form-control" id="formGroupExampleInput2" [(ngModel)]="milkit" [ngModelOptions]="{standalone: true}" placeholder="milkit">
+    </div>
+  </div>
+</div>
+        
           <button type="submit" class="btn btn-primary">Submit</button>
       </form>
   </div>

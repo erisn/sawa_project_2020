@@ -7,9 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TraineeComponent implements OnInit {
 
-  registrationTitle:string = "User Registration";
+  registrationTitle:string = "";
 
   firstName: string;
+  middlename: string;
   lastName: string;
   userName: string;
   phoneNumber: string;
