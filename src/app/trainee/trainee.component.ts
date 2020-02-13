@@ -13,7 +13,6 @@ export class TraineeComponent implements OnInit {
   middlename: string;
   lastName: string;
   userName: string;
-  phoneNumber: string;
 
   constructor() { }
 
