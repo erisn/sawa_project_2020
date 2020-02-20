@@ -11,8 +11,8 @@ import {HttpServiceService} from './http-service.service';
 export class AppComponent implements OnInit {
   title = 'projectsawa';
   
-firstName: string;
-middleName: string;
+ firstName: string;
+ middleName: string;
  lastName: string;
  dateOfBirth: string;
  placeOfBirth : string;
@@ -40,9 +40,9 @@ middleName: string;
  height: string;
  kibdet: string;
  fluyMilkt: string;
-  persons:any;
-  person:Person = new Person();
-  temp:number = 5**2;
+ persons:any;
+ person:Person = new Person();
+ temp:number = 5**2;
 
 
   constructor(private httpServiceService:  HttpServiceService) { }

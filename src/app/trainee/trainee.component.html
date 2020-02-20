@@ -2,9 +2,9 @@
   <h1 id="header">{{registrationTitle}}</h1>
   <form  #f="ngForm" (ngSubmit)="coffeefunction()">
     
-     <div class="container">
-      <p style="font-size: 25px;">Full Information</p>
-    <div class="form-row" style="margin-top:-25px;"> 
+     <div class="container">                          
+     <p style="font-size: 25px;">Full Information</p>
+     <div class="form-row" style="margin-top:-25px;"> 
     <div class="form-group col-md-3">
         <label for="formGroupExampleInput"></label>
         <input type="text" class="form-control" id="formGroupExampleInput" [(ngModel)]="trainee.firstName" [ngModelOptions]="{standalone: true}" placeholder="First Name">
