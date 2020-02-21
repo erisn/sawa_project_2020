@@ -19,21 +19,34 @@ export class TraineeComponent implements OnInit {
 
 
 
-  constructor() { }
+  constructor(private httpServiceService: HttpServiceService ) { }
 
   ngOnInit() {
   }
-coffeefunction() {
 
-  //please convert all input text into upper case
-  var myVar:string;
 
-  
-    console.log("You are  clicking on submit LOL ")
-    console.log(this.trainee);
-    console.log("Data is commint HTMLS LOL , you got it ")
-  // alert(myVar);
- }
+ 
+ submit() {
+
+  this.httpServiceService
+    .createTrainee(this.trainee)
+    .subscribe(
+      data =>{
+        console.log(data);
+        alert("Data is saved , please check your database");
+      //  this.onChanges();
+     
+      },
+      error =>{
+        console.log("Retrieving person failed.");
+        alert("Failed to save data");
+      }
+    );
+}
+
+
+
+
 }
 
 

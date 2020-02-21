@@ -9,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
 export class HttpServiceService {
   url = 'api/persons';
   urlPost = 'api/person';
-  traineeTableUrl='/table';
+  traineeTableUrl='/savetrainee';
   constructor(private http: HttpClient) { }
 
   getPersonsFromDatabase() {
